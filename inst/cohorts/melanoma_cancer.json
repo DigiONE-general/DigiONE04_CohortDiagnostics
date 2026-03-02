@@ -377,13 +377,21 @@
             },
             "isExcluded": true,
             "includeDescendants": true
-          },
+          }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "name": "[DigiONE04] gynaecological cancer",
+      "expression": {
+        "items": [
           {
             "concept": {
               "CONCEPT_CLASS_ID": "Disorder",
-              "CONCEPT_CODE": "94048009",
-              "CONCEPT_ID": 192836,
-              "CONCEPT_NAME": "Primary malignant neoplasm of small intestine",
+              "CONCEPT_CODE": "93797001",
+              "CONCEPT_ID": 201238,
+              "CONCEPT_NAME": "Primary malignant neoplasm of female genital organ",
               "DOMAIN_ID": "Condition",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
@@ -396,9 +404,9 @@
           {
             "concept": {
               "CONCEPT_CLASS_ID": "Disorder",
-              "CONCEPT_CODE": "93761005",
-              "CONCEPT_ID": 197500,
-              "CONCEPT_NAME": "Primary malignant neoplasm of colon",
+              "CONCEPT_CODE": "94143002",
+              "CONCEPT_ID": 195197,
+              "CONCEPT_NAME": "Primary malignant neoplasm of vulva",
               "DOMAIN_ID": "Condition",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
@@ -411,9 +419,129 @@
           {
             "concept": {
               "CONCEPT_CLASS_ID": "Disorder",
-              "CONCEPT_CODE": "109837002",
-              "CONCEPT_ID": 199747,
-              "CONCEPT_NAME": "Overlapping malignant neoplasm of small intestine",
+              "CONCEPT_CODE": "372244006",
+              "CONCEPT_ID": 4162276,
+              "CONCEPT_NAME": "Malignant melanoma",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "269475001",
+              "CONCEPT_ID": 4147164,
+              "CONCEPT_NAME": "Malignant tumor of lymphoid hemopoietic and related tissue",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "94047004",
+              "CONCEPT_ID": 139750,
+              "CONCEPT_NAME": "Primary malignant neoplasm of skin",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "71101000119106",
+              "CONCEPT_ID": 618646,
+              "CONCEPT_NAME": "Recurrent primary malignant neoplasm of vagina",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "71111000119109",
+              "CONCEPT_ID": 45769825,
+              "CONCEPT_NAME": "Recurrent primary malignant neoplasm of vulva",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "name": "[DigiONE04] head and neck cancer",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "254535007",
+              "CONCEPT_ID": 4111799,
+              "CONCEPT_NAME": "Carcinoma of cervical part of esophagus",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "93744007",
+              "CONCEPT_ID": 4247822,
+              "CONCEPT_NAME": "Primary malignant neoplasm of central nervous system",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "93824007",
+              "CONCEPT_ID": 442131,
+              "CONCEPT_NAME": "Primary malignant neoplasm of head",
               "DOMAIN_ID": "Condition",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
@@ -426,9 +554,9 @@
           {
             "concept": {
               "CONCEPT_CLASS_ID": "Disorder",
-              "CONCEPT_CODE": "187752007",
-              "CONCEPT_ID": 4094863,
-              "CONCEPT_NAME": "Malignant tumor of Meckel's diverticulum",
+              "CONCEPT_CODE": "93922007",
+              "CONCEPT_ID": 30346,
+              "CONCEPT_NAME": "Primary malignant neoplasm of neck",
               "DOMAIN_ID": "Condition",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
@@ -441,9 +569,177 @@
           {
             "concept": {
               "CONCEPT_CLASS_ID": "Disorder",
-              "CONCEPT_CODE": "93683002",
-              "CONCEPT_ID": 4247719,
-              "CONCEPT_NAME": "Primary malignant neoplasm of ascending colon",
+              "CONCEPT_CODE": "269475001",
+              "CONCEPT_ID": 4147164,
+              "CONCEPT_NAME": "Malignant tumor of lymphoid hemopoietic and related tissue",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "94047004",
+              "CONCEPT_ID": 139750,
+              "CONCEPT_NAME": "Primary malignant neoplasm of skin",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "372244006",
+              "CONCEPT_ID": 4162276,
+              "CONCEPT_NAME": "Malignant melanoma",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "93744007",
+              "CONCEPT_ID": 4247822,
+              "CONCEPT_NAME": "Primary malignant neoplasm of central nervous system",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "371978009",
+              "CONCEPT_ID": 441224,
+              "CONCEPT_NAME": "Primary malignant neoplasm of cervical esophagus",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "707580003",
+              "CONCEPT_ID": 45769021,
+              "CONCEPT_NAME": "Primary basaloid carcinoma of oropharynx",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "707423001",
+              "CONCEPT_ID": 45768895,
+              "CONCEPT_NAME": "Primary basaloid carcinoma of larynx",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "707486007",
+              "CONCEPT_ID": 45768946,
+              "CONCEPT_NAME": "Primary basaloid carcinoma of hypopharynx",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "707397008",
+              "CONCEPT_ID": 45768873,
+              "CONCEPT_NAME": "Primary basal cell adenocarcinoma of oropharynx",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "254535007",
+              "CONCEPT_ID": 4111799,
+              "CONCEPT_NAME": "Carcinoma of cervical part of esophagus",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "name": "[DigiONE04] brain tumor",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "93744007",
+              "CONCEPT_ID": 4247822,
+              "CONCEPT_NAME": "Primary malignant neoplasm of central nervous system",
               "DOMAIN_ID": "Condition",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
@@ -456,9 +752,65 @@
           {
             "concept": {
               "CONCEPT_CLASS_ID": "Disorder",
-              "CONCEPT_CODE": "93832004",
-              "CONCEPT_ID": 4311480,
-              "CONCEPT_NAME": "Primary malignant neoplasm of ileum",
+              "CONCEPT_CODE": "269475001",
+              "CONCEPT_ID": 4147164,
+              "CONCEPT_NAME": "Malignant tumor of lymphoid hemopoietic and related tissue",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "94047004",
+              "CONCEPT_ID": 139750,
+              "CONCEPT_NAME": "Primary malignant neoplasm of skin",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "372244006",
+              "CONCEPT_ID": 4162276,
+              "CONCEPT_NAME": "Malignant melanoma",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "name": "[DigiONE04] melanoma",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "372244006",
+              "CONCEPT_ID": 4162276,
+              "CONCEPT_NAME": "Malignant melanoma",
               "DOMAIN_ID": "Condition",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
@@ -471,9 +823,33 @@
           {
             "concept": {
               "CONCEPT_CLASS_ID": "Disorder",
-              "CONCEPT_CODE": "94105000",
-              "CONCEPT_ID": 432257,
-              "CONCEPT_NAME": "Primary malignant neoplasm of transverse colon",
+              "CONCEPT_CODE": "314976006",
+              "CONCEPT_ID": 4198437,
+              "CONCEPT_NAME": "Local recurrence of malignant melanoma of skin",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "name": "[DigiOne04] Sarcoma",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "424952003",
+              "CONCEPT_ID": 4314042,
+              "CONCEPT_NAME": "Sarcoma of soft tissue",
               "DOMAIN_ID": "Condition",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
@@ -486,9 +862,9 @@
           {
             "concept": {
               "CONCEPT_CLASS_ID": "Disorder",
-              "CONCEPT_CODE": "371977004",
-              "CONCEPT_ID": 432837,
-              "CONCEPT_NAME": "Primary malignant neoplasm of cecum",
+              "CONCEPT_CODE": "363402007",
+              "CONCEPT_ID": 4181343,
+              "CONCEPT_NAME": "Malignant tumor of esophagus",
               "DOMAIN_ID": "Condition",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
@@ -501,9 +877,9 @@
           {
             "concept": {
               "CONCEPT_CLASS_ID": "Disorder",
-              "CONCEPT_CODE": "93679002",
-              "CONCEPT_ID": 433143,
-              "CONCEPT_NAME": "Primary malignant neoplasm of appendix",
+              "CONCEPT_CODE": "187769009",
+              "CONCEPT_ID": 4094864,
+              "CONCEPT_NAME": "Primary carcinoma of liver",
               "DOMAIN_ID": "Condition",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
@@ -516,9 +892,9 @@
           {
             "concept": {
               "CONCEPT_CLASS_ID": "Disorder",
-              "CONCEPT_CODE": "93775003",
-              "CONCEPT_ID": 435752,
-              "CONCEPT_NAME": "Primary malignant neoplasm of duodenum",
+              "CONCEPT_CODE": "792907004",
+              "CONCEPT_ID": 37311469,
+              "CONCEPT_NAME": "Pancreatic ductal adenocarcinoma",
               "DOMAIN_ID": "Condition",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
@@ -531,9 +907,9 @@
           {
             "concept": {
               "CONCEPT_CLASS_ID": "Disorder",
-              "CONCEPT_CODE": "94006002",
-              "CONCEPT_ID": 436635,
-              "CONCEPT_NAME": "Primary malignant neoplasm of sigmoid colon",
+              "CONCEPT_CODE": "424952003",
+              "CONCEPT_ID": 4314042,
+              "CONCEPT_NAME": "Sarcoma of soft tissue",
               "DOMAIN_ID": "Condition",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
@@ -546,9 +922,9 @@
           {
             "concept": {
               "CONCEPT_CLASS_ID": "Disorder",
-              "CONCEPT_CODE": "93846004",
-              "CONCEPT_ID": 436913,
-              "CONCEPT_NAME": "Primary malignant neoplasm of jejunum",
+              "CONCEPT_CODE": "372244006",
+              "CONCEPT_ID": 4162276,
+              "CONCEPT_NAME": "Malignant melanoma",
               "DOMAIN_ID": "Condition",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
@@ -561,9 +937,24 @@
           {
             "concept": {
               "CONCEPT_CLASS_ID": "Disorder",
-              "CONCEPT_CODE": "94072004",
-              "CONCEPT_ID": 437798,
-              "CONCEPT_NAME": "Primary malignant neoplasm of splenic flexure of colon",
+              "CONCEPT_CODE": "188032002",
+              "CONCEPT_ID": 4095589,
+              "CONCEPT_NAME": "Malignant melanoma of ear and/or external auditory canal",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "D",
+              "INVALID_REASON_CAPTION": "Invalid",
+              "STANDARD_CONCEPT": "N",
+              "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "188030005",
+              "CONCEPT_ID": 4089860,
+              "CONCEPT_NAME": "Malignant melanoma of lip",
               "DOMAIN_ID": "Condition",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
@@ -576,9 +967,9 @@
           {
             "concept": {
               "CONCEPT_CLASS_ID": "Disorder",
-              "CONCEPT_CODE": "109839004",
-              "CONCEPT_ID": 438090,
-              "CONCEPT_NAME": "Overlapping malignant neoplasm of rectum, anus and anal canal",
+              "CONCEPT_CODE": "269581007",
+              "CONCEPT_ID": 4151263,
+              "CONCEPT_NAME": "Malignant melanoma of lower limb",
               "DOMAIN_ID": "Condition",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
@@ -591,9 +982,24 @@
           {
             "concept": {
               "CONCEPT_CLASS_ID": "Disorder",
-              "CONCEPT_CODE": "93980002",
-              "CONCEPT_ID": 438699,
-              "CONCEPT_NAME": "Primary malignant neoplasm of rectosigmoid junction",
+              "CONCEPT_CODE": "188044004",
+              "CONCEPT_ID": 4095592,
+              "CONCEPT_NAME": "Malignant melanoma of scalp and/or neck",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "U",
+              "INVALID_REASON_CAPTION": "Invalid",
+              "STANDARD_CONCEPT": "N",
+              "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "93655004",
+              "CONCEPT_ID": 141232,
+              "CONCEPT_NAME": "Malignant melanoma of skin",
               "DOMAIN_ID": "Condition",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
@@ -606,9 +1012,9 @@
           {
             "concept": {
               "CONCEPT_CLASS_ID": "Disorder",
-              "CONCEPT_CODE": "93826009",
-              "CONCEPT_ID": 438979,
-              "CONCEPT_NAME": "Primary malignant neoplasm of hepatic flexure of colon",
+              "CONCEPT_CODE": "93224002",
+              "CONCEPT_ID": 434590,
+              "CONCEPT_NAME": "Malignant melanoma of skin of eyelid",
               "DOMAIN_ID": "Condition",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
@@ -621,39 +1027,9 @@
           {
             "concept": {
               "CONCEPT_CLASS_ID": "Disorder",
-              "CONCEPT_CODE": "93771007",
-              "CONCEPT_ID": 441800,
-              "CONCEPT_NAME": "Primary malignant neoplasm of descending colon",
-              "DOMAIN_ID": "Condition",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "ICDO Condition",
-              "CONCEPT_CODE": "8140/3-C18.7",
-              "CONCEPT_ID": 44504380,
-              "CONCEPT_NAME": "Adenocarcinoma, NOS, of sigmoid colon",
-              "DOMAIN_ID": "Condition",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "ICDO3"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Disorder",
-              "CONCEPT_CODE": "93984006",
-              "CONCEPT_ID": 74582,
-              "CONCEPT_NAME": "Primary malignant neoplasm of rectum",
+              "CONCEPT_CODE": "93225001",
+              "CONCEPT_ID": 133713,
+              "CONCEPT_NAME": "Malignant melanoma of skin of face",
               "DOMAIN_ID": "Condition",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
@@ -666,9 +1042,159 @@
           {
             "concept": {
               "CONCEPT_CLASS_ID": "Disorder",
-              "CONCEPT_CODE": "109838007",
-              "CONCEPT_ID": 79740,
-              "CONCEPT_NAME": "Overlapping malignant neoplasm of colon",
+              "CONCEPT_CODE": "269579005",
+              "CONCEPT_ID": 4153890,
+              "CONCEPT_NAME": "Malignant melanoma of trunk",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "269580008",
+              "CONCEPT_ID": 4149851,
+              "CONCEPT_NAME": "Malignant melanoma of upper limb",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "109267002",
+              "CONCEPT_ID": 133419,
+              "CONCEPT_NAME": "Overlapping malignant melanoma of skin",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "94047004",
+              "CONCEPT_ID": 139750,
+              "CONCEPT_NAME": "Primary malignant neoplasm of skin",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "372123001",
+              "CONCEPT_ID": 4157456,
+              "CONCEPT_NAME": "Primary malignant neoplasm of skin head and neck",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "94021008",
+              "CONCEPT_ID": 435755,
+              "CONCEPT_NAME": "Primary malignant neoplasm of skin of eyelid",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "94022001",
+              "CONCEPT_ID": 136917,
+              "CONCEPT_NAME": "Primary malignant neoplasm of skin of face",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "94033003",
+              "CONCEPT_ID": 4312685,
+              "CONCEPT_NAME": "Primary malignant neoplasm of skin of lower limb",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "94034009",
+              "CONCEPT_ID": 434291,
+              "CONCEPT_NAME": "Primary malignant neoplasm of skin of neck",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "94043000",
+              "CONCEPT_ID": 133147,
+              "CONCEPT_NAME": "Primary malignant neoplasm of skin of trunk",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "94045007",
+              "CONCEPT_ID": 440658,
+              "CONCEPT_NAME": "Primary malignant neoplasm of skin of upper limb",
               "DOMAIN_ID": "Condition",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
@@ -686,7 +1212,7 @@
     "CriteriaList": [
       {
         "ConditionOccurrence": {
-          "CodesetId": 4,
+          "CodesetId": 9,
           "OccurrenceStartDate": {
             "Value": "2019-01-01",
             "Op": "gte"

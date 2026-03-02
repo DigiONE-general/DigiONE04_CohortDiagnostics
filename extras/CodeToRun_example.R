@@ -1,21 +1,27 @@
-# Install Renv
-install.packages("renv")
-
 # Activate renv, if not already activated.
 renv::activate()
 
 # Restore the packages.
 renv::restore()
 
+# Helper function
+load_or_install <- function(pkg) {
+  if (!requireNamespace(pkg, quietly = TRUE)) {
+    install.packages(pkg)
+  }
+  library(pkg, character.only = TRUE)
+}
+
 # Load Libraries
-library(omopgenerics)
-library(CDMConnector)
-library(odbc)
-library(dplyr)
-library(here)
-library(CohortGenerator)
-library(shinyjs)
-library(CohortCharacteristics)
+load_or_install("omopgenerics")
+load_or_install("CDMConnector")
+load_or_install("odbc")
+load_or_install("dplyr")
+load_or_install("here")
+load_or_install("CohortGenerator")
+load_or_install("shinyjs")
+load_or_install("CohortCharacteristics")
+load_or_install("DatabaseConnector")
 
 
 # [*] EDIT BELOW ==============================================================
@@ -25,7 +31,8 @@ cdmDatabaseSchema <- "EXT_OMOPV5_USA_ONCEMR.FULL_M202112_OMOP_V5"
 writeDatabaseSchema <- "PA_USA_ONCEMR.STUDY_REFERENCE"
 tablePrefix <- "digione4_pancancer_"
 minCellCount <- 5
-sql_dialect <- "sqlserver"
+sql_dialect <- "sqlserver" #'sqlserver' - will run standard OHDSI.sql #'postgresql' - will run PostgreSQL dialect
+#if blank will default to OHDSI sqlserver compatible
 
 server <- Sys.getenv("OMOP_PA_SERVER")
 warehouse <- Sys.getenv("MEDIUM_USA_ONCEMR")
@@ -40,7 +47,7 @@ connectionDetails <- DatabaseConnector::createConnectionDetails(
   connectionString = paste0(server,warehouse, db, "&schema=", cohortSchema),
   user = Sys.getenv("SNOWFLAKE_USER"),
   password ="",
-  pathToDriver = "~/Drivers"
+  pathToDriver = "~/drivers"
 )
 
 connection <- DatabaseConnector::connect(connectionDetails)
