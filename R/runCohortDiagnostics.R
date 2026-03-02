@@ -38,6 +38,7 @@ CohortGenerator::generateCohortSet(
 
 CohortGenerator::exportCohortStatsTables(
   connectionDetails = connectionDetails,
+  cohortDefinitionSet = cohortDefinitionSet,
   cohortDatabaseSchema = writeDatabaseSchema,
   cohortTableNames = cohortTableNames,
   cohortStatisticsFolder = cohortOutputDir
