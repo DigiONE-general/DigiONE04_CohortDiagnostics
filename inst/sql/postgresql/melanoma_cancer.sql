@@ -145,12 +145,12 @@ WHERE E.concept_id is null
 ) C UNION ALL 
 SELECT 8 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
 ( 
-  select concept_id from @vocabulary_database_schema.CONCEPT where (concept_id in (4162276))
+  select concept_id from @vocabulary_database_schema.CONCEPT where (concept_id in (4162276,4162276,4095589,4089860,4151263,4095592,141232,434590,133713,4153890,4149851,133419,139750,4157456,435755,136917,4312685,434291,133147,440658))
 UNION  select c.concept_id
   from @vocabulary_database_schema.CONCEPT c
   join @vocabulary_database_schema.CONCEPT_ANCESTOR ca on c.concept_id = ca.descendant_concept_id
   WHERE c.invalid_reason is null
-  and (ca.ancestor_concept_id in (4162276))
+  and (ca.ancestor_concept_id in (4162276,4162276,4095589,4089860,4151263,4095592,141232,434590,133713,4153890,4149851,133419,139750,4157456,435755,136917,4312685,434291,133147,440658))
 ) I
 LEFT JOIN
 (
@@ -197,7 +197,7 @@ FROM
 (
   SELECT co.person_id,co.condition_occurrence_id,co.condition_concept_id,co.visit_occurrence_id,co.condition_start_date as start_date, COALESCE(co.condition_end_date, (co.condition_start_date + 1*INTERVAL'1 day')) as end_date 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 9)
+  JOIN Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 8)
 ) C
 WHERE C.start_date >= TO_DATE(TO_CHAR(2019,'0000')||'-'||TO_CHAR(1,'00')||'-'||TO_CHAR(1,'00'), 'YYYY-MM-DD')
 AND C.end_date <= TO_DATE(TO_CHAR(2024,'0000')||'-'||TO_CHAR(12,'00')||'-'||TO_CHAR(31,'00'), 'YYYY-MM-DD')
