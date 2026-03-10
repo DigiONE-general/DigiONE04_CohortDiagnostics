@@ -1,7 +1,11 @@
 ParallelLogger::addDefaultFileLogger(file.path(cohortOutputDir, "log.txt"))
 ParallelLogger::addDefaultErrorReportLogger(file.path(cohortOutputDir, "errorReportR.txt"))
 
-SQL_DIR_MAPPING <- list(postgres = "postgresql", sqlserver = "sql_server")
+SQL_DIR_MAPPING <- list(
+  postgres = "postgresql",
+  postgresql = "postgresql",
+  sqlserver = "sql_server"
+)
 
 # generate cohorts ----
 ParallelLogger::logInfo("Creating cohorts")
