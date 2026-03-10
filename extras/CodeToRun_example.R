@@ -31,7 +31,8 @@ cdmDatabaseSchema <- "EXT_OMOPV5_USA_ONCEMR.FULL_M202112_OMOP_V5"
 writeDatabaseSchema <- "PA_USA_ONCEMR.STUDY_REFERENCE"
 tablePrefix <- "digione4_pancancer_"
 minCellCount <- 5
-sql_dialect <- "sqlserver" #'sqlserver' - will run standard OHDSI.sql #'postgresql' - will run PostgreSQL dialect
+sql_dialect <- "sqlserver" #'sqlserver' - will run standard OHDSI.sql 
+                          #'postgres' - will run PostgreSQL dialect
 #if blank will default to OHDSI sqlserver compatible
 
 server <- Sys.getenv("OMOP_PA_SERVER")
