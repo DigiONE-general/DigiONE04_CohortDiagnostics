@@ -32,9 +32,10 @@ load_or_install("DatabaseConnector")
 databaseId <- "YOUR_DATABASE_ID" 
 cdmDatabaseSchema <- ""
 writeDatabaseSchema <- ""
-tablePrefix <- "digione3_mBC_"
+tablePrefix <- "digione4_"
 minCellCount <- 5
-sql_dialect <- "sqlserver" #'sqlserver' - will run standard OHDSI.sql #'postgresql' - will run PostgreSQL dialect
+sql_dialect <- "sqlserver" #'sqlserver' - will run standard OHDSI.sql 
+                           #'postgres' - will run PostgreSQL dialect
 #if blank will default to OHDSI sqlserver compatible
 
 # 1.  COHORT DIAGNOSTICS
