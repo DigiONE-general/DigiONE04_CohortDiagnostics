@@ -22,6 +22,7 @@ load_or_install("CohortGenerator")
 load_or_install("shinyjs")
 load_or_install("CohortCharacteristics")
 load_or_install("DatabaseConnector")
+load_or_install("FeatureExtraction")
 
 
 # [*] EDIT BELOW ==============================================================
