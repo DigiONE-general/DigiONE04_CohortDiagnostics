@@ -539,21 +539,6 @@
           {
             "concept": {
               "CONCEPT_CLASS_ID": "Disorder",
-              "CONCEPT_CODE": "93824007",
-              "CONCEPT_ID": 442131,
-              "CONCEPT_NAME": "Primary malignant neoplasm of head",
-              "DOMAIN_ID": "Condition",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Disorder",
               "CONCEPT_CODE": "93922007",
               "CONCEPT_ID": 30346,
               "CONCEPT_NAME": "Primary malignant neoplasm of neck",
@@ -1954,6 +1939,54 @@
               "STANDARD_CONCEPT_CAPTION": "Standard",
               "VOCABULARY_ID": "SNOMED"
             },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "402815007",
+              "CONCEPT_ID": 4300118,
+              "CONCEPT_NAME": "Squamous cell carcinoma",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "13351431000119102",
+              "CONCEPT_ID": 36717298,
+              "CONCEPT_NAME": "Metastatic malignant neoplasm to lymph nodes of neck from primary malignant neoplasm of thyroid",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "U",
+              "INVALID_REASON_CAPTION": "Invalid",
+              "STANDARD_CONCEPT": "N",
+              "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Disorder",
+              "CONCEPT_CODE": "371978009",
+              "CONCEPT_ID": 441224,
+              "CONCEPT_NAME": "Primary malignant neoplasm of cervical esophagus",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": true,
             "includeDescendants": true
           }
         ]
