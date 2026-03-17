@@ -265,6 +265,36 @@
             },
             "isExcluded": true,
             "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Morph Abnormality",
+              "CONCEPT_CODE": "82711006",
+              "CONCEPT_ID": 4221403,
+              "CONCEPT_NAME": "Infiltrating duct carcinoma",
+              "DOMAIN_ID": "Observation",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Body Structure",
+              "CONCEPT_CODE": "76365002",
+              "CONCEPT_ID": 4295715,
+              "CONCEPT_NAME": "Structure of upper outer quadrant of breast",
+              "DOMAIN_ID": "Spec Anatomic Site",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "includeDescendants": true
           }
         ]
       }
