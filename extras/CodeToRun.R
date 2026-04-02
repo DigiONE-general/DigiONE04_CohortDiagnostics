@@ -4,8 +4,6 @@ install.packages("renv")
 # Activate renv, if not already activated.
 renv::activate()
 
-options(install.packages.compile.from.source = "never")
-
 # Restore the packages.
 renv::restore()
 
@@ -32,13 +30,13 @@ load_or_install("FeatureExtraction")
 
 # [*] EDIT BELOW ==============================================================
 
-databaseId <- "omop" 
-cdmDatabaseSchema <- "public"
-writeDatabaseSchema <- "r_writable"
-tablePrefix <- "digione_"
+databaseId <- "YOUR_DATABASE_ID" 
+cdmDatabaseSchema <- ""
+writeDatabaseSchema <- ""
+tablePrefix <- "digione4_"
 minCellCount <- 5
-sql_dialect <- "postgres" #'sqlserver' - will run standard OHDSI.sql 
-#'postgres' - will run PostgreSQL dialect
+sql_dialect <- "sqlserver" #'sqlserver' - will run standard OHDSI.sql 
+                           #'postgres' - will run PostgreSQL dialect
 #if blank will default to OHDSI sqlserver compatible
 
 # 1.  COHORT DIAGNOSTICS
@@ -46,16 +44,16 @@ sql_dialect <- "postgres" #'sqlserver' - will run standard OHDSI.sql
 # https://ohdsi.github.io/DatabaseConnector/reference/createConnectionDetails.html
 
 connectionDetails <- DatabaseConnector::createConnectionDetails(
-  dbms = "postgresql", #"postgresql", "snowflake", "spark", "redshift", "sql server"
-  user = Sys.getenv("DB_UID"),
-  password = Sys.getenv("DB_PWD"),
-  server = paste0(Sys.getenv("DB_SERVER"), "/", Sys.getenv("DB_NAME")),
-  port = as.integer(Sys.getenv("DB_PORT")),
-  extraSettings = "",
-  # oracleDriver = NULL,
-  # connectionString = NULL,
-  pathToDriver = "C:\\JDBC\\postgresql\\"
-  # port = port
+  dbms = NULL, #"postgresql", "snowflake", "spark", "redshift", "sql server"
+  user = NULL,
+  password = NULL,
+  server = NULL,
+  port = NULL,
+  extraSettings = NULL,
+  oracleDriver = NULL,
+  connectionString = NULL,
+  pathToDriver = NULL,
+  port = port
 )
 
 connection <- DatabaseConnector::connect(connectionDetails)
