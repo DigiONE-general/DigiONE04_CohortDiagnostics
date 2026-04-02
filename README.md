@@ -1,4 +1,4 @@
-# DigiONE04: Real-World Insights on Cancer Burden and Treatment Delays – A Comprehensive Observation Study Based on DigiONE Treatment Centres (DigiACT) 
+# DigiONE04: Real-World Insights on Cancer Burden and Treatment Delays – A Comprehensive Observation Study Based on DigiONE Treatment Centres (DigiACT)
 
 ## Cohort Diagnostics
 
@@ -8,38 +8,127 @@
 
 - CohortDiagnostics results show cohort inclusion rule attrition, orphan codes (concepts which should be included in the cohort but are not included) and cohort overlap which are key in shaping cohort definition for DigiONE studies.
 
--   This package also uses Rshiny to generate a dashboard interface from .sqlite file. This is generated at the end of `CodeToRun.R` - after running and generating results once you can use the View Results chunk at the end of CodeToRun.R to regenerate the results dashboard as you require. 
+- This package also uses Rshiny to generate a dashboard interface from .sqlite file. This is generated at the end of `CodeToRun.R` - after running and generating results once you can use the View Results chunk at the end of CodeToRun.R to regenerate the results dashboard as you require.
 
-*Requirements and run time*
+---
 
-Run time: system dependant - allow approx 60 - 75 minutes
+## Requirements and run time
 
-Requirements: Requires R, some packages require Java (see here: https://ohdsi.github.io/Hades/rSetup.html)
-              Allow up to 500MB disk space 
+- **Run time:** system dependant — allow approx 60–75 minutes
+- **R version:** 4.4.1 (required — `renv.lock` was created for this version)
+- **Java:** required by some packages (see: https://ohdsi.github.io/Hades/rSetup.html)
+- **Rtools44:** required for building packages from source (https://cran.r-project.org/bin/windows/Rtools/rtools44/rtools44.html)
+- **Disk space:** allow up to 500 MB
 
+---
 
-*Running the code in RStudio*
+## Running the code in RStudio
 
-Note: Make sure you open the folder as an R Project in order to allow renv functionality.
+> **Note:** Open the folder as an R Project to enable renv functionality.
 
-- Open `CodeToRun.R` script in /extras/ folder.
+### 1. Configure credentials
 
--   Install the latest version of renv (as per first few lines of script)
+Credentials are stored in a `.Renviron` file that is **excluded from git** for security.
 
-``` r
-install.packages("renv")
+```bash
+# Copy the example file
+cp .Renviron.example .Renviron
 ```
 
--   Restore the project library (as per first few lines of script)
+Fill in `.Renviron` with your database connection details:
 
-``` r
+```
+DB_SERVER=
+DB_PORT=5432
+DB_NAME=
+DB_UID=
+DB_PWD=
+```
+
+> `.Renviron` is loaded automatically when you open the R Project. To reload manually:
+> ```r
+> readRenviron(".Renviron")
+> ```
+
+### 2. Restore the package library
+
+Open `extras/CodeToRun.R` and run the setup section:
+
+```r
+install.packages("renv")
 renv::restore()
 ```
 
--   Edit the variables in the `CodeToRun.R` script where indicated to 'Edit Below' - these are used to connect to the database to the correct values for your environment.
--   Execute the `CodeToRun.R` script in RStudio. The 'View Results' chunk of the script is optional, but recommended to allow interactive exploration of the results. 
+> **Tip:** If `renv::restore()` hangs on packages requiring compilation, set before running:
+> ```r
+> options(install.packages.compile.from.source = "never")
+> renv::restore()
+> ```
+>
+> If restoring on **OneDrive**, pause synchronisation first to avoid file locking issues.
 
+#### Known issues during renv::restore()
+
+| Package | Problem | Solution |
+|---------|---------|----------|
+| `FeatureExtraction` | No binary available via RSPM | `renv::install("FeatureExtraction@3.12.0")` |
+| `duckdb` | Source compilation hangs | `renv::record(list(duckdb = "1.5.1"))` then `renv::restore()` |
+
+### 3. Run diagnostics
+
+Execute `extras/CodeToRun.R` in RStudio. The script will:
+
+1. Connect to the database using credentials from `.Renviron`
+2. Generate cohort tables
+3. Run CohortDiagnostics across all 13 cancer cohorts
+4. Save results to `cohortDiagnosticsResults-<databaseId>/Results_<databaseId>.zip`
+
+### 4. View results (optional)
+
+The 'View Results' section at the end of `CodeToRun.R` launches an interactive Shiny dashboard:
+
+```r
+CohortDiagnostics::createMergedResultsFile(...)
+CohortDiagnostics::launchDiagnosticsExplorer(...)
+```
+
+---
+
+## Security — credentials
+
+Credentials are **never stored in code**. The `extras/CodeToRun.R` script reads all connection parameters from environment variables:
+
+```r
+connectionDetails <- DatabaseConnector::createConnectionDetails(
+  dbms     = "postgresql",
+  user     = Sys.getenv("DB_UID"),
+  password = Sys.getenv("DB_PWD"),
+  server   = paste0(Sys.getenv("DB_SERVER"), "/", Sys.getenv("DB_NAME")),
+  port     = as.integer(Sys.getenv("DB_PORT")),
+  ...
+)
+```
+
+`.Renviron` is listed in `.gitignore` and will never be committed to the repository.
+
+---
+
+## Repository structure
+
+```
+.
+├── extras/
+│   ├── CodeToRun.R          # Main entry point — configure and run here
+│   └── CodeToRun_example.R  # Example for alternative database setups
+├── inst/
+│   ├── cohorts/             # Cohort JSON definitions
+│   ├── cohortsToCreate.csv  # Cohort metadata
+│   └── sql/                 # SQL for cohort generation (postgresql / sql_server)
+├── R/
+│   └── runCohortDiagnostics.R  # Core diagnostics logic (sourced by CodeToRun.R)
+├── .Renviron.example        # Credentials template (copy to .Renviron and fill in)
+├── CHANGES_SUMMARY.md       # Detailed changelog
+└── renv.lock                # Package versions lockfile
+```
 
 ------------------------------------------------------------------------
-
-

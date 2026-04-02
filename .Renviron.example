@@ -1,0 +1,8 @@
+# Copy this file to .Renviron and fill in your credentials
+# .Renviron is excluded from git (.gitignore)
+
+DB_SERVER=
+DB_PORT=5432
+DB_NAME=
+DB_UID=
+DB_PWD=
