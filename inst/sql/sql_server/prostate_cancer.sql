@@ -7,28 +7,6 @@ CREATE TABLE #Codesets (
 INSERT INTO #Codesets (codeset_id, concept_id)
 SELECT 0 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
 ( 
-  select concept_id from @vocabulary_database_schema.CONCEPT where (concept_id in (4162253))
-UNION  select c.concept_id
-  from @vocabulary_database_schema.CONCEPT c
-  join @vocabulary_database_schema.CONCEPT_ANCESTOR ca on c.concept_id = ca.descendant_concept_id
-  WHERE c.invalid_reason is null
-  and (ca.ancestor_concept_id in (4162253))
-
-) I
-) C UNION ALL 
-SELECT 1 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
-( 
-  select concept_id from @vocabulary_database_schema.CONCEPT where (concept_id in (258369))
-UNION  select c.concept_id
-  from @vocabulary_database_schema.CONCEPT c
-  join @vocabulary_database_schema.CONCEPT_ANCESTOR ca on c.concept_id = ca.descendant_concept_id
-  WHERE c.invalid_reason is null
-  and (ca.ancestor_concept_id in (258369))
-
-) I
-) C UNION ALL 
-SELECT 2 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
-( 
   select concept_id from @vocabulary_database_schema.CONCEPT where (concept_id in (200962,4161028,200962))
 UNION  select c.concept_id
   from @vocabulary_database_schema.CONCEPT c
@@ -39,12 +17,12 @@ UNION  select c.concept_id
 ) I
 LEFT JOIN
 (
-  select concept_id from @vocabulary_database_schema.CONCEPT where (concept_id in (4162276,4147164,139750,4300118))
+  select concept_id from @vocabulary_database_schema.CONCEPT where (concept_id in (4162276,4147164,139750,4300118,1553105,44501366,36566280,36543006,36548533,36559448,36540985,36529320,44502350,36564340,36533342,36552989,36522370,44501968,36547024,36546114,36550323,36522940,36536835,36525831,36556846,42512398,36539639,36545805,36551235,36559668,36527397,37177729,1553133,42512377,36563529,37177733,36565415,36525240,36519105,36526468,36547431,36552151,36519333,36558122,36567912,36558501,36547390,36554563,44501195,36531262,36534262,36544648,36565427,36520178,37166560))
 UNION  select c.concept_id
   from @vocabulary_database_schema.CONCEPT c
   join @vocabulary_database_schema.CONCEPT_ANCESTOR ca on c.concept_id = ca.descendant_concept_id
   WHERE c.invalid_reason is null
-  and (ca.ancestor_concept_id in (4162276,4147164,139750,4300118))
+  and (ca.ancestor_concept_id in (4162276,4147164,139750,4300118,1553105,44501366,36566280,36543006,36548533,36559448,36540985,36529320,44502350,36564340,36533342,36552989,36522370,44501968,36547024,36546114,36550323,36522940,36536835,36525831,36556846,42512398,36539639,36545805,36551235,36559668,36527397,37177729,1553133,42512377,36563529,37177733,36565415,36525240,36519105,36526468,36547431,36552151,36519333,36558122,36567912,36558501,36547390,36554563,44501195,36531262,36534262,36544648,36565427,36520178,37166560))
 
 ) E ON I.concept_id = E.concept_id
 WHERE E.concept_id is null
@@ -74,7 +52,7 @@ FROM
 (
   SELECT co.person_id,co.condition_occurrence_id,co.condition_concept_id,co.visit_occurrence_id,co.condition_start_date as start_date, COALESCE(co.condition_end_date, DATEADD(day,1,co.condition_start_date)) as end_date 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 2)
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 0)
 ) C
 
 WHERE C.start_date >= DATEFROMPARTS(2019, 1, 1)
